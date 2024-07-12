@@ -111,7 +111,6 @@ resource "aws_security_group_rule" "web" {
   to_port     = 80
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
-
   security_group_id = aws_security_group.app.id
 }
 
@@ -121,7 +120,6 @@ resource "aws_security_group_rule" "all" {
   to_port     = 65535
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
-
   security_group_id = aws_security_group.app.id
 }
 
@@ -165,7 +163,7 @@ resource "aws_instance" "web" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public-a.id
   associate_public_ip_address = true
-  vpc_security_group_ids      = ["${aws_security_group.app.id}"]
+  vpc_security_group_ids      = [aws_security_group.app.id]
   key_name                    = var.key_name
   tags                        = { Name = "WP-WebAPP" }
 

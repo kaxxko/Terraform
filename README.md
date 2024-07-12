@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # Terraform
 WordPress by Terraform 
-=======
 vi terraform.tfvars
 ```
 region     = "us-east-1"
@@ -15,4 +13,3 @@ password     = "db_password"
 key_name     = "[key_pair]"
 ssh_key_file = "~/.ssh/[key_pair].pem"
 ```
->>>>>>> 9b70b03 (first commit)

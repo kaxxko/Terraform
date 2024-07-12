@@ -1,5 +1,6 @@
 # Terraform
-WordPress by Terraform 
+WordPress by Terraform
+
 vi terraform.tfvars
 ```
 region     = "us-east-1"

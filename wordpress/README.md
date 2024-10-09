@@ -1,5 +1,5 @@
 # Terraform
-WordPress by Terraform
+Build WordPress by Terraform
 
 vi terraform.tfvars
 ```
